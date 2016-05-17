@@ -1,0 +1,42 @@
+##  @file
+# Provides driver and definitions to support MonzaX in UEFI BIOS.
+#
+# Copyright (c) 2016 Intel Corporation. All rights reserved
+#
+# Permission is hereby granted, free of charge, to any person obtaining
+# a copy of this software and associated documentation files (the "Software"),
+# to deal in the Software without restriction, including without limitation
+# the rights to use, copy, modify, merge, publish, distribute, sublicense,
+# and/or sell copies of the Software, and to permit persons to whom the Software
+# is furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included
+# in all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+##
+
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = MonzaXPkg
+  PACKAGE_GUID                   = A1AD6771-3B7B-407b-B69D-B40E47F5C5FE
+  PACKAGE_VERSION                = 0.1
+
+[Includes]
+  Include
+
+[Guids]
+  gMonzaXModuleTokenSpaceGuid = { 0xb74df1a0, 0xabae, 0x4324, { 0xbc, 0x6a, 0x9e, 0xbf, 0xab, 0x25, 0xe, 0x31 }}
+  gMonzaXI2cDeviceGuid = { 0xfde4f8eb, 0xf134, 0x4cad, { 0x82, 0xde, 0x4, 0x1a, 0x4, 0x38, 0x31, 0x9c }}
+
+[Protocols]
+  gMonzaXIoProtocolGuid = { 0x56ec4783, 0x9d61, 0x49c5, { 0x8c, 0x18, 0x17, 0x72, 0x35, 0x69, 0x93, 0xb6 }}
+
+
